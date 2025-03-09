@@ -1,10 +1,13 @@
 #include <stdio.h>
 
-void movBispo(int passos){
-    if (passos > 0) {
-        printf("Cima\n", passos);
-        printf("Direita\n", passos);
-        movBispo(passos - 1);
+void movBispo (int passos){
+    for (int v = 0; v < passos; v++)
+    {
+        printf("cima\n");
+        for (int h = 0; h < 1; h++)
+        {
+            printf("Direita\n");
+        }
     }
 }
 
@@ -54,10 +57,13 @@ int main() {
 
             case 4:
                 printf("\nMovimento do Cavalo ♞\n");
-                for (int i = 0; i < 2; i++) {
-                    printf("Baixo\n");
+                for (int v = 0; v < 2; v++) {
+                    printf("Cima\n");
+                }   
+                for (int h = 0; h < 1; h++)
+                {
+                    printf("Direita\n");
                 }
-                printf("Esquerda\n");
                 break;
 
             case 5: 
