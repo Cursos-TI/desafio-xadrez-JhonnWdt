@@ -56,14 +56,12 @@ int main() {
                 break;
 
             case 4:
-                printf("\nMovimento do Cavalo ♞\n");
-                for (int v = 0; v < 2; v++) {
+                printf("\nMovimento do Cavalo ♞ :\n");
+                for(int v = 0, h = 0; v < 2 && h < 2; v++, h++) { 
                     printf("Cima\n");
-                }   
-                for (int h = 0; h < 1; h++)
-                {
-                    printf("Direita\n");
-                }
+                } 
+                printf("Direita\n");
+            
                 break;
 
             case 5: 
