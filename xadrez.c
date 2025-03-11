@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//implementação de movimento do bispo com loop aninhado
 void movBispo (int passos){
     for (int v = 0; v < passos; v++)
     {
@@ -57,10 +58,17 @@ int main() {
 
             case 4:
                 printf("\nMovimento do Cavalo ♞ :\n");
-                for(int v = 0, h = 0; v < 2 && h < 2; v++, h++) { 
-                    printf("Cima\n");
-                } 
-                printf("Direita\n");
+                for(int v = 0; v < 2; v++) { 
+                    {   for (int h = 0; h == 2; h++)
+                    {
+                        printf("Direita\n");
+                    }
+                    
+                        printf("Cima\n");
+                    }
+                    
+                } printf("Direita\n");
+        
             
                 break;
 
