@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-//implementação de movimento do bispo com loop aninhado
 void movBispo (int passos){
     for (int v = 0; v < passos; v++)
     {
